@@ -1,7 +1,7 @@
 {extends file="parent:frontend/home/index.tpl"}
 
 {block name="frontend_index_content_top"}{/block}
-
+Debug-Top: {debug}
 {* Page title *}
 {block name='frontend_index_header_title'}{strip}
     {if $sCategoryContent.metaTitle}

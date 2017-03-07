@@ -2,14 +2,20 @@
 
 
 {block name="frontend_index_top_bar_nav"}
+{debug}
+    {$Shop|var_dump}
+    shopname var dump
+    {$sShopName|var_dump}
+    shopware var dump
+    {$Shopware|var_dump}
 
-<div>
+    <div>
 
     <div class="pull-left left-top-bar">
         <div id="lang">
             <ul class="list-inline hidden-xs">
                 <li>
-                    <a href="#" class="active">English</a>
+                    <a href="#" class="active">EnglishGO</a>
                 </li>
                 <li>
                     <a href="#">French</a>

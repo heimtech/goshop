@@ -26,5 +26,6 @@ SHOPWARE_EOD;
 
     public function createConfig(Form\Container\TabContainer $container)
     {
+        Shopware()->Debuglogger()->info('some message');
     }
 }
