@@ -10,18 +10,16 @@
 
         {* Search field *}
         {block name='frontend_index_search_field'}
-            <input type="search" name="sSearch" class="main-search--field" autocomplete="off" autocapitalize="off" placeholder="{s name="IndexSearchFieldPlaceholder"}{/s}" maxlength="30"  />
+            <input type="search" name="sSearch" placeholder="{s name="IndexSearchFieldPlaceholder"}{/s}" autocomplete="off" autocapitalize="off" maxlength="30" class="main-search--field placeholder-fix top-search" autocomplete="off">
+
         {/block}
 
         {* Search input *}
         {block name='frontend_index_search_field_submit'}
-            <button type="submit" class="main-search--button">
-
-                {* Search icon *}
+           <button type="submit" class="main-search--button" >
                 {block name='frontend_index_search_field_submit_icon'}
-                    <i class="icon--search"></i>
+                    <i class="icon_search field-icon"></i>
                 {/block}
-
                 {* Search text *}
                 {block name='frontend_index_search_field_submit_text'}
                     <span class="main-search--text">{s name="IndexSearchFieldSubmit"}{/s}</span>
@@ -40,4 +38,5 @@
         <div class="main-search--results"></div>
     {/block}
 {/block}
+
 

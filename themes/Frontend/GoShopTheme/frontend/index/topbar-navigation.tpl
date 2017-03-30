@@ -40,30 +40,26 @@
 
                 <div class="pull-right">
                     <div id="user-top-bar">
-                        <ul class="list-inline"
+                        <ul class="list-inline">
                         {block name="frontend_index_checkout_actions_notepad"}
-                            <li class="navigation--entry entry--notepad" role="menuitem">
-                                <a href="{url controller='note'}" title="{"{s namespace='frontend/index/checkout_actions' name='IndexLinkNotepad'}{/s}"|escape}" class="btn">
-                                    <i class="icon--heart"></i>
-                                    {if $sNotesQuantity > 0}
-                                        <span class="badge notes--quantity">
-                    {$sNotesQuantity}
-                </span>
-                                    {/if}
+
+                            <li class="btn-group hidden-xs dropdown">
+                                <a href="{url controller='note'}" class="pm_item" data-toggle="dropdown" title="{"{s namespace='frontend/index/checkout_actions' name='IndexLinkNotepad'}{/s}"|escape}">
+                                    <i class="icon-heart"></i>
+                                    <span class="hidden-sm">Wunschliste</span> (<span class="dd-products-count">{$sNotesQuantity}</span>)
                                 </a>
                             </li>
+
                         {/block}
 
                         {* My account entry *}
                         {block name="frontend_index_checkout_actions_my_options"}
-                            <li class="navigation--entry entry--account" role="menuitem">
+                           <li class="btn-group navigation--entry entry--account" role="menuitem">
                                 {block name="frontend_index_checkout_actions_account"}
-                                    <a href="{url controller='account'}" title="{"{s namespace='frontend/index/checkout_actions' name='IndexLinkAccount'}{/s}"|escape}" class="btn is--icon-left entry--link account--link">
-                                        <i class="icon--account"></i>
-                                        <span class="account--display">
-                    {s namespace='frontend/index/checkout_actions' name='IndexLinkAccount'}{/s}
-                </span>
-                                    </a>
+                                <a  href="{url controller='account'}" class="pm_item" data-toggle="dropdown" title="{"{s namespace='frontend/index/checkout_actions' name='IndexLinkAccount'}{/s}"|escape}">
+                                    <i class="icon-login"></i>
+                                    <span class="account--display">{s namespace='frontend/index/checkout_actions' name='IndexLinkAccount'}{/s}</span>
+                                </a>
                                 {/block}
                             </li>
                         {/block}

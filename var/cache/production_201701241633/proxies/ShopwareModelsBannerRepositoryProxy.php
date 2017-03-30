@@ -1,5 +1,5 @@
 <?php
-class Shopware_Proxies_ShopwareControllersBackendThemeProxy extends Shopware_Controllers_Backend_Theme implements Enlight_Hook_Proxy
+class Shopware_Proxies_ShopwareModelsBannerRepositoryProxy extends Shopware\Models\Banner\Repository implements Enlight_Hook_Proxy
 {
     public function executeParent($method, $args = array())
     {
