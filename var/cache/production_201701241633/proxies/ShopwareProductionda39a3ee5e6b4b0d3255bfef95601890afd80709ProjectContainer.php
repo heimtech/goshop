@@ -1722,7 +1722,7 @@ class ShopwareProductionda39a3ee5e6b4b0d3255bfef95601890afd80709ProjectContainer
     }
     protected function getTemplateService()
     {
-        return $this->services['template'] = $this->get('template_factory')->factory($this->get('events'), $this->get('snippet_resource'), $this->get('shopware.escaper'), array('compileCheck' => true, 'compileLocking' => true, 'useSubDirs' => true, 'forceCompile' => false, 'useIncludePath' => true, 'charset' => 'utf-8', 'forceCache' => false, 'cacheDir' => 'C:\\wamp64\\www\\goshop/var/cache/production_201701241633/templates', 'compileDir' => 'C:\\wamp64\\www\\goshop/var/cache/production_201701241633/templates'));
+        return $this->services['template'] = $this->get('template_factory')->factory($this->get('events'), $this->get('snippet_resource'), $this->get('shopware.escaper'), array('compileCheck' => true, 'compileLocking' => true, 'useSubDirs' => true, 'forceCompile' => true, 'useIncludePath' => true, 'charset' => 'utf-8', 'forceCache' => false, 'cacheDir' => 'C:\\wamp64\\www\\goshop/var/cache/production_201701241633/templates', 'compileDir' => 'C:\\wamp64\\www\\goshop/var/cache/production_201701241633/templates'));
     }
     protected function getTemplateFactoryService()
     {
@@ -2086,7 +2086,7 @@ class ShopwareProductionda39a3ee5e6b4b0d3255bfef95601890afd80709ProjectContainer
                 'compileCheck' => true,
                 'compileLocking' => true,
                 'useSubDirs' => true,
-                'forceCompile' => false,
+                'forceCompile' => true,
                 'useIncludePath' => true,
                 'charset' => 'utf-8',
                 'forceCache' => false,
@@ -2096,7 +2096,7 @@ class ShopwareProductionda39a3ee5e6b4b0d3255bfef95601890afd80709ProjectContainer
             'shopware.template.compilecheck' => true,
             'shopware.template.compilelocking' => true,
             'shopware.template.usesubdirs' => true,
-            'shopware.template.forcecompile' => false,
+            'shopware.template.forcecompile' => true,
             'shopware.template.useincludepath' => true,
             'shopware.template.charset' => 'utf-8',
             'shopware.template.forcecache' => false,

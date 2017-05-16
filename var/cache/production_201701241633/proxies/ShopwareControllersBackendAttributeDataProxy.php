@@ -1,5 +1,5 @@
 <?php
-class Shopware_Proxies_ShopwareControllersWidgetsCheckoutProxy extends Shopware_Controllers_Widgets_Checkout implements Enlight_Hook_Proxy
+class Shopware_Proxies_ShopwareControllersBackendAttributeDataProxy extends Shopware_Controllers_Backend_AttributeData implements Enlight_Hook_Proxy
 {
     public function executeParent($method, $args = array())
     {

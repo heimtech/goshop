@@ -1,0 +1,30 @@
+{
+    "label": {
+        "de": "Einkaufswelten im Artikel",
+        "en": "Calculator with individual options"
+    },
+    "copyright": "(c) by Pixeleyes GmbH",
+    "license": "proprietary",
+    "link": "http://www.pixeleyes.de",
+    "author": "Pixeleyes GmbH",
+	"deleteDB": "true",
+    "installDB": "true",
+    "currentVersion": "2.1.4",
+
+
+    "changelog": {
+        "de": {
+            "2.1.4": "Aktuelle Version Shopware 5"
+        },
+        "en": {
+            "2.1.4": "First Release Shopware 5"
+        }
+    },
+
+    "compatibility": {
+        "minimumVersion": "5",
+        "maximumVersion": null,
+        "blacklist": [
+        ]
+    }
+}

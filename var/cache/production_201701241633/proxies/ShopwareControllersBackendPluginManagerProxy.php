@@ -1,5 +1,5 @@
 <?php
-class Shopware_Proxies_sMarketingProxy extends sMarketing implements Enlight_Hook_Proxy
+class Shopware_Proxies_ShopwareControllersBackendPluginManagerProxy extends Shopware_Controllers_Backend_PluginManager implements Enlight_Hook_Proxy
 {
     public function executeParent($method, $args = array())
     {
